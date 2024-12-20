@@ -1,0 +1,498 @@
+/* General Reset */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+div,
+a,
+button,
+input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283593;
+    padding: 10px 20px;
+    color: white;
+}
+
+.home {
+    cursor: pointer;
+}
+
+.resoursefile {
+    cursor: pointer;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar div,
+.navbar button {
+    margin: 0 10px;
+}
+
+.navbar button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #3949ab;
+}
+
+.searchpanel input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchpanel button {
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content */
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero .img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    background: url('photos/constitu.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e55a50;
+    transform: translateY(-2px);
+}
+
+.hero button:active {
+    transform: translateY(0);
+}
+
+
+
+.about {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.about button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* major components if constiution   */
+
+
+.major-components {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.major-components h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.major-components p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.components-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.component-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 30vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.component-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.component-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.component-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.component-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* courses card */
+/* General container styling */
+.courses {
+    text-align: center;
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+    font-family: Arial, sans-serif;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Course list layout */
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* Individual course cards */
+.course-card,
+.course-card1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover,
+.course-card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img,
+.course-card1 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card h3,
+.course-card1 h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #555;
+}
+
+.course-card p,
+.course-card1 p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Enroll button styling */
+.enroll-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.enroll-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* Hover effect */
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the enroll button */
+.enroll-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 75px;
+}
+
+.enroll-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.study {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Study Resources Section */
+.studyresources {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.studyresources .notes,
+.studyresources .refreencebook {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.studyresources .notes:hover,
+.studyresources .refreencebook:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.studyresources img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.studyresources .notes,
+.studyresources .refreencebook {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .studyresources {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+.notes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.refreencebook {
+
+    /* background-image: url('photos/refrencebook.webp'); */
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.refreencebook:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+
+    background-color: #283593;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    /* display: flex; */
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}

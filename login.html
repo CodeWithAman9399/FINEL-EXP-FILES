@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <!-- Form starts here -->|
+    <form action="/submit.php">
+        <!-- Text input for Name -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+        </div>
+
+        <!-- Phone input -->
+        <div>
+            <label for="ph">Phone</label>
+            <input id="ph" type="tel" placeholder="Enter Phone" required>
+        </div>
+
+        <!-- Email input -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+
+        <!-- Password input -->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" required>
+        </div>
+
+        <!-- Date input -->
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" required>
+        </div>
+
+        <!-- Dropdown (select input) for Gender -->
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Radio buttons for Subscription Plan -->
+
+
+        <!-- Checkbox for agreeing to terms -->
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <!-- Textarea for Comments -->
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <!-- Form ends here -->
+    <script src="form-validation.js"></script>
+
+</body>
+
+</html>

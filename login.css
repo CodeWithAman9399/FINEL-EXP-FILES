@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0eb75a, #2575fc);
+    color: #333;
+    background-image: url(photos/login\ form.webp);
+}
+
+form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1e63cc;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Style for placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+    font-size: 12px;
+}
+
+/* Style for dropdown */
+select {
+    appearance: none;
+    background: #fff url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"%3E%3Cpath d="M0 0l5 5 5-5z" fill="%23555"/%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
